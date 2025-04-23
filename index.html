@@ -1,93 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/">
     <title>SoftGallery</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-<body>
-        <header class="w-full h-15 rem flex items-center justify-around bg-gray-300">
-            <div>
-                <img src="./assets/images/logo.png" alt="Logo" class="h-30 rem w-30 rem p-px">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="fixed top-0 left-0 right-0 z-50 w-full h-16 flex items-center justify-around bg-gray-300"
+    >
+      <div>
+        <img
+          src="./assets/images/logo.png"
+          alt="Logo"
+          class="h-30 rem w-30 rem p-px"
+        />
+      </div>
+      <nav
+        class="hidden md:flex space-x-6 text-gray-700 font-medium width-100px"
+      >
+        <a href="#" class="hover:text-blue-500">Home</a>
+        <a href="#Disciplina" class="hover:text-blue-500">Disciplina</a>
+        <a href="#Bredas" class="hover:text-blue-500">Bredas</a>
+        <a href="#Projeto" class="hover:text-blue-500">Projeto</a>
+        <a href="#Membros" class="hover:text-blue-500">Membros do Grupo</a>
+      </nav>
+    </header>
+    <body>
+      <section id="Disciplina" class="pt-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Disciplina</h2>
+          <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
+            <div class="md:w-2/3">
+              <p class="text-black-500 font-medium text-[20px] m-5">
+                Fabrica de Projetos Ageis tem como objetivo aprimorar as habilidades
+            de desenvolvimento dos alunos da Unimar em um unico projeto aonde
+            eles podem aplicar os conhecimentos adquiridos ao longo do semestre
+            nas outras matérias em um grande projeto,incentivando a melhorar
+            suas habilidades de comunicação e trabalho em grupo. Neste ano sendo
+            ministrada pelo professor Cristovam em apoio da empresa Bredas, o
+            objetivo é desenvolver uma vitrine virtual aonde o admistrador da
+            loja tem total autonomia sobre o que ele deseja que esteja visivel
+            ao seu cliente, alterando a estética e a forma como seus produtos
+            são apresentados.
+              </p>
             </div>
-            <nav class="hidden md:flex space-x-6 text-gray-700 font-medium width-100px">
-                <a href="#" class="hover:text-blue-500">Home</a>
-                <a href="#Disciplina" class="hover:text-blue-500">Disciplina</a>
-                <a href="#Bredas" class="hover:text-blue-500">Bredas</a>
-                <a href="#Projeto" class="hover:text-blue-500">Projeto</a>
-                <a href="#Membros" class="hover:text-blue-500">Membros do Grupo</a>
-            </nav>
-        </header>
-        <body>
-            <section id="Disciplina">
-            <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
-                <h2 class="text-black-500 text-[35px] font-bold m-5"> Disciplina </h2>
-                <p class="text-black-500 font-medium text-[20px] m-5">Fabrica de Projetos Ageis tem como objetivo aprimorar as habilidades de desenvolvimento dos alunos da Unimar em um unico projeto aonde eles podem aplicar os conhecimentos 
-                    adquiridos ao longo do semestre nas outras matérias em um grande projeto,incentivando a melhorar suas habilidades de comunicação e trabalho em grupo. Neste ano sendo ministrada pelo professor Cristovam em apoio da empresa Bredas,
-                    o objetivo é desenvolver uma vitrine virtual aonde o admistrador da loja tem total autonomia sobre o que ele deseja que esteja visivel ao seu cliente, alterando a estética e a forma como seus produtos são apresentados.
-                </p>
+            <div class="md:w-1/3">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <img
+                  class="w-full h-auto"
+                  src="./assets/images/card (1).jpg"
+                  alt=""
+                />
+              </div>
+      </section>
+      <section id="Bredas" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 mb-15">
+          <h2 class="text-3xl font-bold mb-8 text-center">Sobre a Bredas</h2>
+          <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
+            <div class="md:w-1/3">
+              <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden">
+                <img
+                  class="w-full h-auto"
+                  src="https://bredas.com.br/images/logo-bredas.svg"
+                  alt=""
+                />
+              </div>
             </div>
-        </section>
-        <section id="Bredas" class="py-16 bg-gray-50">   
-            <div class="container mx-auto px-4 mb-15">
-                <h2 class="text-3xl font-bold mb-8 text-center">Sobre a Bredas</h2>
-                <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
-                    <div class="md:w-1/3">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <img class="w-full h-auto" src="https://bredas.com.br/images/logo-bredas.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="md:w-2/3">
-                        <p class="text-base text-gray-700 mb-6">A Breda's Sistemas é uma empresa brasileira com mais de 30 anos de experiência no desenvolvimento de soluções tecnológicas para empresas de diversos setores. Desde sua fundação em 1990, a empresa tem como missão proporcionar inovação e competitividade para seus clientes, oferecendo softwares de gestão empresarial, como o ERP B-Vendas, o ERP VendaSimples e o B.Escola, que ajudam a otimizar processos e a melhorar a eficiência organizacional. Com um time qualificado e tecnologias de ponta, a Breda's tem sido um parceiro estratégico para micro e pequenas empresas em todo o Brasil.
-                        </p>
-                    </div>                    
-                </div>
+            <div class="md:w-2/3">
+              <p class="text-black-500 font-medium text-[20px] m-5">
+                A Breda's Sistemas é uma empresa brasileira com mais de 30 anos
+                de experiência no desenvolvimento de soluções tecnológicas para
+                empresas de diversos setores. Desde sua fundação em 1990, a
+                empresa tem como missão proporcionar inovação e competitividade
+                para seus clientes, oferecendo softwares de gestão empresarial,
+                como o ERP B-Vendas, o ERP VendaSimples e o B.Escola, que ajudam
+                a otimizar processos e a melhorar a eficiência organizacional.
+                Com um time qualificado e tecnologias de ponta, a Breda's tem
+                sido um parceiro estratégico para micro e pequenas empresas em
+                todo o Brasil.
+              </p>
             </div>
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
-                    <div class="md:w-2/3">
-                        <p class="text-base text-gray-700">Focada em evolução constante, a Breda's investe continuamente em inovação e em recursos tecnológicos para garantir que seus clientes estejam sempre à frente no mercado. Além disso, a empresa valoriza a formação e o desenvolvimento das pessoas, tanto dos colaboradores quanto dos clientes, contribuindo para um futuro mais sustentável e de sucesso. Ao longo de sua trajetória, a Breda's tem se consolidado como referência no setor, com soluções completas e customizadas que atendem às necessidades de seus clientes em todas as fases de seu crescimento empresarial.</p>
-                    </div> 
-                    <div class="md:w-1/3">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <img class="w-full h-auto" src="https://bredas.com.br/images/logo-bredas.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
+            <div class="md:w-2/3">
+              <p class="text-black-500 font-medium text-[20px] m-5">
+                Focada em evolução constante, a Breda's investe continuamente em
+                inovação e em recursos tecnológicos para garantir que seus
+                clientes estejam sempre à frente no mercado. Além disso, a
+                empresa valoriza a formação e o desenvolvimento das pessoas,
+                tanto dos colaboradores quanto dos clientes, contribuindo para
+                um futuro mais sustentável e de sucesso. Ao longo de sua
+                trajetória, a Breda's tem se consolidado como referência no
+                setor, com soluções completas e customizadas que atendem às
+                necessidades de seus clientes em todas as fases de seu
+                crescimento empresarial.
+              </p>
             </div>
-            <div class="grid md:grid-cols-3 gap-3 mt-10">
-                <div class="bg-white p-6 rounded-lg shadow text-center">
-                    <div class="text-4xl text-blue-500 mb-4"><i class="fa-solid fa-bullseye"></i></div>
-                    <h3 class="font-bold text-lg mb-2">Missão</h3>
-                    <p class="text-gray-700">Oferecer soluções tecnológicas simples e eficazes que impulsionem o crescimento de micro e pequenas empresas.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow text-center">
-                    <div class="text-4xl text-green-500 mb-4"><i class="fa-solid fa-rocket"></i></div>
-                    <h3 class="font-bold text-lg mb-2">Visão</h3>
-                    <p class="text-gray-700">Ser referência em softwares de gestão, levando inovação e resultados para nossos clientes.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow text-center">
-                    <div class="text-4xl text-yellow-500 mb-4"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                    <h3 class="font-bold text-lg mb-2">Valores</h3>
-                    <p class="text-gray-700">Inovação, ética, comprometimento e valorização das pessoas estão no centro do que fazemos.</p>
-                </div>
+            <div class="md:w-1/3">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <img
+                  class="w-full h-auto"
+                  src="https://bredas.com.br/images/logo-bredas.svg"
+                  alt=""
+                />
+              </div>
             </div>
-        </section>  
-        <section id="Projeto">
-            <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
-                <h2 class="text-black-500 text-[35px] font-bold m-5">Projeto</h2>
-                <p class="text-black-500 font-medium text-[20px] m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, urna vel lacinia gravida, sapien urna vehicula metus, dapibus tempor augue ligula vitae nisl. Maecenas in vulputate eros. Quisque dictum purus ac interdum mattis. Pellentesque posuere elementum maximus. Morbi mi metus, scelerisque ut aliquet ut, dictum quis tellus. In pellentesque maximus turpis, at vulputate quam iaculis vitae. Fusce eu iaculis leo. Nam vitae arcu bibendum, lobortis tortor sit amet, egestas nibh. Proin sit amet feugiat felis. Donec quis aliquet elit. Nullam mollis, ligula non dictum porttitor, urna tellus aliquet enim, ac lobortis urna metus in nisi. Nulla auctor, eros et convallis ullamcorper, felis eros tristique dolor, eu suscipit risus tortor vel metus. Duis commodo consequat justo, id fermentum nibh viverra sed.</p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-3 mt-10">
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-4xl text-blue-500 mb-4">
+              <i class="fa-solid fa-bullseye"></i>
             </div>
-        </section>
-        <section id="Membros">
-            <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
-                <h2 class="text-black-500 text-[35px] font-bold m-5"> Membros do Grupo </h2>
-                <p class="text-black-500 font-medium text-[20px] m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, urna vel lacinia gravida, sapien urna vehicula metus, dapibus tempor augue ligula vitae nisl. Maecenas in vulputate eros. Quisque dictum purus ac interdum mattis. Pellentesque posuere elementum maximus. Morbi mi metus, scelerisque ut aliquet ut, dictum quis tellus. In pellentesque maximus turpis, at vulputate quam iaculis vitae. Fusce eu iaculis leo. Nam vitae arcu bibendum, lobortis tortor sit amet, egestas nibh. Proin sit amet feugiat felis. Donec quis aliquet elit. Nullam mollis, ligula non dictum porttitor, urna tellus aliquet enim, ac lobortis urna metus in nisi. Nulla auctor, eros et convallis ullamcorper, felis eros tristique dolor, eu suscipit risus tortor vel metus. Duis commodo consequat justo, id fermentum nibh viverra sed.</p>
+            <h3 class="font-bold text-lg mb-2">Missão</h3>
+            <p class="text-cyan-500 font-medium text-[20px] m-5">
+              Oferecer soluções tecnológicas simples e eficazes que impulsionem
+              o crescimento de micro e pequenas empresas.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-4xl text-green-500 mb-4">
+              <i class="fa-solid fa-rocket"></i>
             </div>
-        </section>
-        </body>
-</body>
+            <h3 class="font-bold text-lg mb-2">Visão</h3>
+            <p class="text-cyan-500 font-medium text-[20px] m-5">
+              Ser referência em softwares de gestão, levando inovação e
+              resultados para nossos clientes.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-4xl text-yellow-500 mb-4">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Valores</h3>
+            <p class="text-cyan-500 font-medium text-[20px] m-5">
+              Inovação, ética, comprometimento e valorização das pessoas estão
+              no centro do que fazemos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Projeto">
+        <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
+          <h2 class="text-black-500 text-[35px] font-bold m-5">Projeto</h2>
+          <p class="text-black-500 font-medium text-[20px] m-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            interdum, urna vel lacinia gravida, sapien urna vehicula metus,
+            dapibus tempor augue ligula vitae nisl. Maecenas in vulputate eros.
+            Quisque dictum purus ac interdum mattis. Pellentesque posuere
+            elementum maximus. Morbi mi metus, scelerisque ut aliquet ut, dictum
+            quis tellus. In pellentesque maximus turpis, at vulputate quam
+            iaculis vitae. Fusce eu iaculis leo. Nam vitae arcu bibendum,
+            lobortis tortor sit amet, egestas nibh. Proin sit amet feugiat
+            felis. Donec quis aliquet elit. Nullam mollis, ligula non dictum
+            porttitor, urna tellus aliquet enim, ac lobortis urna metus in nisi.
+            Nulla auctor, eros et convallis ullamcorper, felis eros tristique
+            dolor, eu suscipit risus tortor vel metus. Duis commodo consequat
+            justo, id fermentum nibh viverra sed.
+          </p>
+        </div>
+      </section>
+      <section id="Membros">
+        <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
+          <h2 class="text-black-500 text-[35px] font-bold m-5">
+            Membros do Grupo
+          </h2>
+          <p class="text-black-500 font-medium text-[20px] m-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            interdum, urna vel lacinia gravida, sapien urna vehicula metus,
+            dapibus tempor augue ligula vitae nisl. Maecenas in vulputate eros.
+            Quisque dictum purus ac interdum mattis. Pellentesque posuere
+            elementum maximus. Morbi mi metus, scelerisque ut aliquet ut, dictum
+            quis tellus. In pellentesque maximus turpis, at vulputate quam
+            iaculis vitae. Fusce eu iaculis leo. Nam vitae arcu bibendum,
+            lobortis tortor sit amet, egestas nibh. Proin sit amet feugiat
+            felis. Donec quis aliquet elit. Nullam mollis, ligula non dictum
+            porttitor, urna tellus aliquet enim, ac lobortis urna metus in nisi.
+            Nulla auctor, eros et convallis ullamcorper, felis eros tristique
+            dolor, eu suscipit risus tortor vel metus. Duis commodo consequat
+            justo, id fermentum nibh viverra sed.
+          </p>
+        </div>
+      </section>
+    </body>
+  </body>
 </html>
