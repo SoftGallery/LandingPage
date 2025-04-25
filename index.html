@@ -1,196 +1,507 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./assets/">
-    <title>SoftGallery</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header
-      class="fixed top-0 left-0 right-0 z-50 w-full h-16 flex items-center justify-around bg-gray-300"
-    >
-      <div>
-        <img
-          src="./assets/images/logo.png"
-          alt="Logo"
-          class="h-30 rem w-30 rem p-px"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./assets/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>SoftGallery</title>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <header class="fixed top-0 w-full z-50 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-extrabold text-blue-700">
+        <img src="./assets/images/logo.svg" alt="Logo SoftGallery" style="height: 60px;">
       </div>
-      <nav
-        class="hidden md:flex space-x-6 text-gray-700 font-medium width-100px"
-      >
-        <a href="#" class="hover:text-blue-500">Home</a>
-        <a href="#Disciplina" class="hover:text-blue-500">Disciplina</a>
-        <a href="#Bredas" class="hover:text-blue-500">Bredas</a>
-        <a href="#Projeto" class="hover:text-blue-500">Projeto</a>
-        <a href="#Membros" class="hover:text-blue-500">Membros do Grupo</a>
+      <nav class="hidden md:flex gap-8 text-base font-medium text-gray-700">
+        <a href="#" class="hover:text-blue-700 transition">Início</a>
+        <a href="#solucao" class="hover:text-blue-700 transition">Solução Desenvolvida</a>
+        <a href="#disciplina" class="hover:text-blue-700 transition">Contexto Acadêmico</a>
+        <a href="#parceria" class="hover:text-blue-700 transition">Empresa Parceira</a>
+        <a href="#equipe" class="hover:text-blue-700 transition">Equipe de Desenvolvimento</a>
       </nav>
-    </header>
-    <body>
-      <section id="Disciplina" class="pt-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Disciplina</h2>
-          <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
-            <div class="md:w-2/3">
-              <p class="text-black-500 font-medium text-[20px] m-5">
-                Fabrica de Projetos Ageis tem como objetivo aprimorar as habilidades
-            de desenvolvimento dos alunos da Unimar em um unico projeto aonde
-            eles podem aplicar os conhecimentos adquiridos ao longo do semestre
-            nas outras matérias em um grande projeto,incentivando a melhorar
-            suas habilidades de comunicação e trabalho em grupo. Neste ano sendo
-            ministrada pelo professor Cristovam em apoio da empresa Bredas, o
-            objetivo é desenvolver uma vitrine virtual aonde o admistrador da
-            loja tem total autonomia sobre o que ele deseja que esteja visivel
-            ao seu cliente, alterando a estética e a forma como seus produtos
-            são apresentados.
-              </p>
-            </div>
-            <div class="md:w-1/3">
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <img
-                  class="w-full h-auto"
-                  src="./assets/images/card (1).jpg"
-                  alt=""
-                />
-              </div>
-      </section>
-      <section id="Bredas" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4 mb-15">
-          <h2 class="text-3xl font-bold mb-8 text-center">Sobre a Bredas</h2>
-          <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
-            <div class="md:w-1/3">
-              <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-                <img
-                  class="w-full h-auto"
-                  src="https://bredas.com.br/images/logo-bredas.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="md:w-2/3">
-              <p class="text-black-500 font-medium text-[20px] m-5">
-                A Breda's Sistemas é uma empresa brasileira com mais de 30 anos
-                de experiência no desenvolvimento de soluções tecnológicas para
-                empresas de diversos setores. Desde sua fundação em 1990, a
-                empresa tem como missão proporcionar inovação e competitividade
-                para seus clientes, oferecendo softwares de gestão empresarial,
-                como o ERP B-Vendas, o ERP VendaSimples e o B.Escola, que ajudam
-                a otimizar processos e a melhorar a eficiência organizacional.
-                Com um time qualificado e tecnologias de ponta, a Breda's tem
-                sido um parceiro estratégico para micro e pequenas empresas em
-                todo o Brasil.
-              </p>
-            </div>
+    </div>
+  </header>
+
+  <div class="h-20"></div>
+
+  <section id="inicio" class="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white overflow-hidden">
+
+    <div class="absolute -top-10 -left-10 w-60 h-60 bg-white opacity-5 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full blur-2xl animate-ping"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-20 text-center relative z-10 animate-fade-in">
+
+      <p class="uppercase tracking-widest text-xs font-semibold text-yellow-300 mb-2">
+        Conecte sua marca ao mundo digital
+      </p>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        Mais do que uma loja virtual,<br />
+        <span class="text-yellow-300">uma vitrine com alma</span>
+      </h1>
+
+      <p class="text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed text-gray-100">
+        O <strong>SoftGallery</strong> é feito para quem quer vender com identidade. Transforme seu catálogo em uma
+        experiência envolvente e humanizada, sem abrir mão da tecnologia.
+      </p>
+
+      <a href="#demo"
+        class="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-full shadow-xl hover:shadow-2xl transition hover:scale-105 relative group">
+        <span class="relative z-10">Ver Demonstração</span>
+        <span
+          class="absolute inset-0 bg-white opacity-20 rounded-full blur-xl group-hover:opacity-40 transition"></span>
+      </a>
+
+      <p class="mt-8 italic text-gray-200 text-base">
+        “Sua loja pode ser digital, mas o toque dela continua sendo seu.”
+      </p>
+    </div>
+  </section>
+
+
+
+  <section id="solucao" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Solução Desenvolvida</h2>
+      <p class="text-gray-600 text-lg mb-12">
+        O <strong>SoftGallery</strong> é mais do que uma vitrine online — é uma plataforma completa desenvolvida para
+        transformar lojas físicas em experiências digitais autênticas e eficientes. Totalmente personalizável e fácil de
+        usar,
+        a solução conecta o lojista com seus clientes de forma prática, moderna e estratégica.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-left">
+        <div onclick="openModal('modalPersonalizacao')"
+          class="cursor-pointer bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fa-solid fa-palette"></i>
           </div>
-        </div>
-        <div class="container mx-auto px-4">
-          <div class="flex flex-col md:flex-row items-center gap-8 mx-auto">
-            <div class="md:w-2/3">
-              <p class="text-black-500 font-medium text-[20px] m-5">
-                Focada em evolução constante, a Breda's investe continuamente em
-                inovação e em recursos tecnológicos para garantir que seus
-                clientes estejam sempre à frente no mercado. Além disso, a
-                empresa valoriza a formação e o desenvolvimento das pessoas,
-                tanto dos colaboradores quanto dos clientes, contribuindo para
-                um futuro mais sustentável e de sucesso. Ao longo de sua
-                trajetória, a Breda's tem se consolidado como referência no
-                setor, com soluções completas e customizadas que atendem às
-                necessidades de seus clientes em todas as fases de seu
-                crescimento empresarial.
-              </p>
-            </div>
-            <div class="md:w-1/3">
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <img
-                  class="w-full h-auto"
-                  src="https://bredas.com.br/images/logo-bredas.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid md:grid-cols-3 gap-3 mt-10">
-          <div class="bg-white p-6 rounded-lg shadow text-center">
-            <div class="text-4xl text-blue-500 mb-4">
-              <i class="fa-solid fa-bullseye"></i>
-            </div>
-            <h3 class="font-bold text-lg mb-2">Missão</h3>
-            <p class="text-cyan-500 font-medium text-[20px] m-5">
-              Oferecer soluções tecnológicas simples e eficazes que impulsionem
-              o crescimento de micro e pequenas empresas.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow text-center">
-            <div class="text-4xl text-green-500 mb-4">
-              <i class="fa-solid fa-rocket"></i>
-            </div>
-            <h3 class="font-bold text-lg mb-2">Visão</h3>
-            <p class="text-cyan-500 font-medium text-[20px] m-5">
-              Ser referência em softwares de gestão, levando inovação e
-              resultados para nossos clientes.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow text-center">
-            <div class="text-4xl text-yellow-500 mb-4">
-              <i class="fa-solid fa-hand-holding-heart"></i>
-            </div>
-            <h3 class="font-bold text-lg mb-2">Valores</h3>
-            <p class="text-cyan-500 font-medium text-[20px] m-5">
-              Inovação, ética, comprometimento e valorização das pessoas estão
-              no centro do que fazemos.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="Projeto">
-        <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
-          <h2 class="text-black-500 text-[35px] font-bold m-5">Projeto</h2>
-          <p class="text-black-500 font-medium text-[20px] m-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            interdum, urna vel lacinia gravida, sapien urna vehicula metus,
-            dapibus tempor augue ligula vitae nisl. Maecenas in vulputate eros.
-            Quisque dictum purus ac interdum mattis. Pellentesque posuere
-            elementum maximus. Morbi mi metus, scelerisque ut aliquet ut, dictum
-            quis tellus. In pellentesque maximus turpis, at vulputate quam
-            iaculis vitae. Fusce eu iaculis leo. Nam vitae arcu bibendum,
-            lobortis tortor sit amet, egestas nibh. Proin sit amet feugiat
-            felis. Donec quis aliquet elit. Nullam mollis, ligula non dictum
-            porttitor, urna tellus aliquet enim, ac lobortis urna metus in nisi.
-            Nulla auctor, eros et convallis ullamcorper, felis eros tristique
-            dolor, eu suscipit risus tortor vel metus. Duis commodo consequat
-            justo, id fermentum nibh viverra sed.
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Identidade Visual Personalizável</h3>
+          <p class="text-gray-600">
+            Cores, seções e layout moldados com a cara da sua marca. Sua loja com personalidade única.
           </p>
         </div>
-      </section>
-      <section id="Membros">
-        <div class="m-15 bg-sky-500/20 rounded-lg h-auto">
-          <h2 class="text-black-500 text-[35px] font-bold m-5">
-            Membros do Grupo
-          </h2>
-          <p class="text-black-500 font-medium text-[20px] m-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            interdum, urna vel lacinia gravida, sapien urna vehicula metus,
-            dapibus tempor augue ligula vitae nisl. Maecenas in vulputate eros.
-            Quisque dictum purus ac interdum mattis. Pellentesque posuere
-            elementum maximus. Morbi mi metus, scelerisque ut aliquet ut, dictum
-            quis tellus. In pellentesque maximus turpis, at vulputate quam
-            iaculis vitae. Fusce eu iaculis leo. Nam vitae arcu bibendum,
-            lobortis tortor sit amet, egestas nibh. Proin sit amet feugiat
-            felis. Donec quis aliquet elit. Nullam mollis, ligula non dictum
-            porttitor, urna tellus aliquet enim, ac lobortis urna metus in nisi.
-            Nulla auctor, eros et convallis ullamcorper, felis eros tristique
-            dolor, eu suscipit risus tortor vel metus. Duis commodo consequat
-            justo, id fermentum nibh viverra sed.
+
+        <div onclick="openModal('modalIntegracoes')"
+          class="cursor-pointer bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="text-green-600 text-3xl mb-4">
+            <i class="fa-solid fa-sync-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Integrações Automáticas</h3>
+          <p class="text-gray-600">
+            Produtos atualizados em tempo real via Venda Simples e integração com a Bredas.
           </p>
         </div>
-      </section>
-    </body>
-  </body>
+
+        <div onclick="openModal('modalPainel')"
+          class="cursor-pointer bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="text-yellow-500 text-3xl mb-4">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Painel Administrativo Intuitivo</h3>
+          <p class="text-gray-600">
+            Controle total da loja em um sistema simples de usar, sem complicações.
+          </p>
+        </div>
+
+        <div onclick="openModal('modalWhatsapp')"
+          class="cursor-pointer bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="text-green-500 text-3xl mb-4">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Conexão com WhatsApp</h3>
+          <p class="text-gray-600">
+            Clientes compram e conversam direto com você em poucos cliques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="disciplina" class="pt-24 pb-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">Contexto Acadêmico</h2>
+
+      <div class="flex flex-col md:flex-row items-center gap-12">
+
+        <div class="md:w-2/3">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            A <strong>Fábrica de Projetos Ágeis</strong> tem como objetivo aprimorar as habilidades de desenvolvimento
+            dos alunos da Unimar por meio de um projeto integrador. Nele, os estudantes aplicam os conhecimentos
+            adquiridos ao longo do semestre, desenvolvendo suas competências técnicas, de comunicação e trabalho em
+            equipe.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mt-6">
+            Neste ano, a disciplina é ministrada pelo professor <strong>Cristovam</strong> com o apoio da empresa
+            <strong>Bredas</strong>. O desafio é criar uma vitrine virtual onde o administrador da loja tenha total
+            autonomia sobre a aparência e organização dos produtos, alinhando estética e funcionalidade ao perfil da
+            marca.
+          </p>
+        </div>
+
+        <div class="md:w-1/3">
+          <div class="rounded-xl overflow-hidden">
+            <img src="./assets/images/logo_unimar.png" alt="Projeto em andamento" class="w-full h-auto object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="parceria" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">Empresa Parceira</h2>
+
+      <div class="flex flex-col md:flex-row items-center gap-12 mb-12">
+        <div class="md:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex items-center justify-center h-full">
+            <img class="w-full max-w-xs h-auto" src="https://bredas.com.br/images/logo-bredas.svg"
+              alt="Logo da Bredas" />
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            A <strong>Breda's Sistemas</strong> é uma empresa brasileira com mais de 30 anos de experiência no
+            desenvolvimento de soluções tecnológicas. Desde 1990, a Bredas oferece softwares como <em>ERP B-Vendas</em>,
+            <em>VendaSimples</em> e <em>B.Escola</em>, otimizando processos e melhorando a gestão de empresas em todo o
+            Brasil.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mt-6">
+            Com foco em inovação e qualidade, a empresa se destaca como um parceiro estratégico para micro e pequenas
+            empresas, apoiando seu crescimento com tecnologia de ponta e uma equipe altamente qualificada.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+        <div class="md:w-2/3">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Focada em evolução constante, a Bredas investe em inovação e capacitação para garantir que seus clientes
+            estejam sempre à frente. Além disso, a empresa valoriza a formação contínua, contribuindo para um
+            ecossistema de negócios mais eficiente e sustentável.
+          </p>
+        </div>
+        <div class="md:w-1/3 hidden md:block">
+          <div class="bg-white rounded-xl shadow-lg p-6 h-full flex items-center justify-center">
+            <img class="w-full max-w-xs h-auto rounded-xl" src="./assets/images/fachada.jpg" alt="Logo da Bredas">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl text-blue-500 mb-4">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Missão</h3>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Oferecer soluções tecnológicas simples e eficazes que impulsionem o crescimento de micro e pequenas
+            empresas.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl text-green-600 mb-4">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Visão</h3>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Ser referência em softwares de gestão, levando inovação e resultados para nossos clientes.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl text-yellow-500 mb-4">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Valores</h3>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Inovação, ética, comprometimento e valorização das pessoas estão no centro do que fazemos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="equipe" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-12">Equipe de Desenvolvimento</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition group">
+          <div class="relative w-40 h-40 mx-auto mb-4">
+            <div
+              class="absolute inset-0 rounded-full border-4 border-blue-200 opacity-70 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-100">
+            </div>
+            <img src="./assets/images/integrantes/rayssa.jpg" alt="Rayssa Marconato"
+              class="w-40 h-40 object-cover rounded-full border-4 border-white relative z-10">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Rayssa Marconato</h3>
+          <p class="text-sm text-gray-500">Desenvolvedor full stack</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition group">
+          <div class="relative w-40 h-40 mx-auto mb-4">
+            <div
+              class="absolute inset-0 rounded-full border-4 border-blue-200 opacity-70 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-100">
+            </div>
+            <img src="./assets/images/integrantes/andre.png" alt="André Luis Reis"
+              class="w-40 h-40 object-cover rounded-full border-4 border-white relative z-10">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">André Luis Reis</h3>
+          <p class="text-sm text-gray-500">Desenvolvedor full stack</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition group">
+          <div class="relative w-40 h-40 mx-auto mb-4">
+            <div
+              class="absolute inset-0 rounded-full border-4 border-blue-200 opacity-70 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-100">
+            </div>
+            <img src="./assets/images/integrantes/matheus.png" alt="Matheus Gomes"
+              class="w-40 h-40 object-cover rounded-full border-4 border-white relative z-10">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Matheus Gomes</h3>
+          <p class="text-sm text-gray-500">Desenvolvedor full stack</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition group">
+          <div class="relative w-40 h-40 mx-auto mb-4">
+            <div
+              class="absolute inset-0 rounded-full border-4 border-blue-200 opacity-70 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-100">
+            </div>
+            <img src="./assets/images/integrantes/rodrigo.png" alt="Rodrigo Bassalobre"
+              class="w-40 h-40 object-cover rounded-full border-4 border-white relative z-10">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800">Rodrigo Bassalobre</h3>
+          <p class="text-sm text-gray-500">Desenvolvedor full stack</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-24 bg-white" id="demo">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-blue-800">Veja o SoftGallery em Ação</h2>
+      <p class="text-gray-600 mb-8">
+        Confira como sua loja pode ficar com uma vitrine moderna, intuitiva e com a cara da
+        sua marca.
+      </p>
+
+      <div class="mt-6 flex items-center justify-center flex-col gap-8">
+        <div class="mt-6 flex items-center justify-center flex-col">
+          <label for="colorPicker" class="block text-sm font-medium text-gray-600 mb-2">Personalize as cores:</label>
+          <div class="flex items-center justify-center gap-4 bg-gray-100 p-3 rounded-lg shadow-inner">
+            <input type="color" id="colorPicker" value="#232936" onchange="changeColor(this.value)"
+              class="appearance-none border-none w-10 h-10 cursor-pointer shadow-md transition-transform duration-300 transform hover:scale-110"
+              title="Escolher cor" />
+            <span class="text-sm text-gray-600">Clique e escolha a cor dos botões</span>
+          </div>
+        </div>
+
+        <div class="w-full max-w-xs mx-auto bg-white rounded-xl shadow-lg p-4">
+
+          <div class="flex justify-between items-center mb-4">
+            <i id="backIcon" class="fas fa-chevron-left text-gray-700 text-2xl cursor-pointer"></i>
+          </div>
+
+          <div class="relative w-full flex justify-center mb-4">
+            <div class="carousel-container">
+              <button id="prevImage"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full cursor-pointer">
+                <i id="carouselLeft" class="fas fa-chevron-left"></i>
+              </button>
+              <img id="productImage"
+                src="https://images6.kabum.com.br/produtos/fotos/sync_mirakl/601796/Controle-Com-Fio-Gamesir-G7-Se-Para-XBOX-One-X-S-PC-Branco_1731372757_g.jpg"
+                alt="Produto" class="w-40 h-40 object-cover rounded-lg shadow-lg">
+              <button id="nextImage"
+                class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full cursor-pointer">
+                <i id="carouselRight" class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <h2 class="text-xl font-bold text-primary mb-2">Controle Com Fio Gamesir G7 Se Para XBOX One X S PC Branco
+            </h2>
+            <p class="text-gray-500 mb-2">Gamesir G7 SE Branco Lançamento</p>
+            <p class="text-xl font-semibold text-gray-800 mb-2" id="priceTag">R$ 459,91</p>
+
+            <div class="flex items-center mb-2">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star-half-alt text-yellow-400"></i>
+              <span class="text-gray-500 ml-2">(123 avaliações)</span>
+            </div>
+
+            <p class="text-sm text-gray-600 mb-4">A placa frontal de pintura magnética especial e as travas rápidas
+              destacam o Gamesir G7 SE, trazendo os sticks do Efeito Hall para o controle do Xbox pela primeira vez.</p>
+
+
+            <div class="flex justify-between mb-4 items-center flex-col gap-8">
+
+              <button
+                class="py-3 px-4 bg-gray-800 text-white rounded-full font-semibold text-sm flex items-center gap-2"
+                id="addToCartBtn">
+                <i class="fas fa-shopping-cart text-sm"></i>
+                Adicionar ao carrinho
+              </button>
+
+
+              <div class="flex items-center">
+                <button onclick="decreaseQuantity()"
+                  class="quantity-button px-2 py-1 bg-gray-800 text-white rounded-l-md" id="decreaseQuantity">-</button>
+                <input id="quantityInput" type="number" value="1" class="quantity-input w-12 text-center text-gray-700"
+                  readonly />
+                <button onclick="increaseQuantity()" id="increaseQuantity"
+                  class="quantity-button px-2 py-1 bg-gray-800 text-white rounded-r-md">+</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-3xl font-extrabold mb-4">
+        Chega de vitrines engessadas. <br>
+        <span class="text-yellow-300">Liberte o potencial da sua loja!</span>
+      </h2>
+      <p class="text-lg mb-8">
+        O SoftGallery é mais do que uma plataforma. <br> É a vitrine inteligente e personalizada que sua marca merece.
+      </p>
+      <a href="#"
+        class="inline-block px-10 py-4 bg-white text-blue-700 font-bold rounded-lg hover:bg-gray-100 transition">
+        Solicitar Demonstração
+      </a>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-gray-50 text-blue-600 py-12 mt-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Sobre</h3>
+          <ul>
+            <li><a href="#" class="hover:text-primary transition duration-300">Quem somos</a></li>
+            <li><a href="#" class="hover:text-primary transition duration-300">Termos de Serviço</a></li>
+            <li><a href="#" class="hover:text-primary transition duration-300">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contate-nos</h3>
+          <ul>
+            <li><a href="mailto:contato@empresa.com"
+                class="hover:text-primary transition duration-300">SoftGallery@empresa.com</a></li>
+            <li><a href="tel:+5514999999999" class="hover:text-primary transition duration-300">(14) 99999-9999</a></li>
+            <li><a href="#" class="hover:text-primary transition duration-300">Marília SP</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Siga-nos</h3>
+          <div class="flex gap-4">
+            <a href="#" class="text-xl hover:text-primary transition duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-xl hover:text-primary transition duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-xl hover:text-primary transition duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-xl hover:text-primary transition duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-300 mt-8 pt-6">
+        <div class="flex justify-center items-center">
+          <p class="text-sm text-gray-500">© 2025 SoftGallery. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modalPersonalizacao"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded-xl shadow-xl p-8 max-w-xl w-full relative text-left">
+      <button onclick="closeModal('modalPersonalizacao')"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl">&times;</button>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">Identidade Visual Personalizável</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Com o SoftGallery, sua loja não precisa seguir um padrão engessado. Escolha cores, fontes e organize as seções
+        da forma que mais combina com o seu público. Mostre quem você é e encante seus visitantes com uma vitrine
+        digital que transmite os valores da sua marca.
+      </p>
+    </div>
+  </div>
+
+  <div id="modalIntegracoes" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded-xl shadow-xl p-8 max-w-xl w-full relative text-left">
+      <button onclick="closeModal('modalIntegracoes')"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl">&times;</button>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">Integrações Automáticas</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Esqueça o trabalho manual: o SoftGallery se conecta automaticamente com a plataforma <strong>Venda
+          Simples</strong>, atualizando os produtos em tempo real.
+      </p>
+    </div>
+  </div>
+
+  <div id="modalPainel" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded-xl shadow-xl p-8 max-w-xl w-full relative text-left">
+      <button onclick="closeModal('modalPainel')"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl">&times;</button>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">Painel Administrativo Intuitivo</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Administre tudo com facilidade: produtos, banners, promoções e categorias. O painel foi pensado para ser direto
+        e intuitivo, mesmo para quem não tem conhecimento técnico. Configure sua loja em poucos minutos e tenha total
+        controle na palma da mão.
+      </p>
+    </div>
+  </div>
+
+  <div id="modalWhatsapp" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded-xl shadow-xl p-8 max-w-xl w-full relative text-left">
+      <button onclick="closeModal('modalWhatsapp')"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl">&times;</button>
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">Conexão com WhatsApp</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Facilite o contato direto com seus clientes! O SoftGallery permite integração com o WhatsApp, tornando possível
+        atender dúvidas, enviar catálogos e finalizar vendas com poucos cliques. Um canal de atendimento moderno,
+        prático e que gera resultados.
+      </p>
+    </div>
+  </div>
+
+
+</body>
+<script src="./assets/js/mobileSimulation.js"></script>
+<script src="./assets/js/modalController.js"></script>
+
 </html>
