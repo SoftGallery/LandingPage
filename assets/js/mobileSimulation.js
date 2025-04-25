@@ -4,6 +4,7 @@ function changeColor(color) {
     document.getElementById('priceTag').style.color = color;
     document.getElementById('increaseQuantity').style.backgroundColor = color;
     document.getElementById('decreaseQuantity').style.backgroundColor = color;
+    document.getElementById('chooseColor').style.backgroundColor = color;
 
 
     document.getElementById('carouselLeft').style.color = color;
